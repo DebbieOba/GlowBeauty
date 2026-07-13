@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GlowBeauty - reach us by email, phone, or visit our Lagos store.">
+    <title>GlowBeauty | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">GlowBeauty</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bars" id="mobileMenu"></i>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="contact-hero">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- INFO CARDS -->
+    <section class="info-cards">
+
+        <div class="info-card">
+            <div class="info-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h3>Email us</h3>
+            <p>hello@glowbeauty.com</p>
+            <i class="fa-regular fa-envelope watermark"></i>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Our address</h3>
+            <p>24 Admiralty Way, Lekki Phase 1, Lagos</p>
+            <i class="fa-solid fa-location-dot watermark"></i>
+        </div>
+
+        <div class="info-card highlight">
+            <div class="info-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Call us</h3>
+            <p>+234 800 000 0000</p>
+            <i class="fa-solid fa-phone watermark"></i>
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section">
+        <h2>Get in touch!</h2>
+
+        <form id="contactForm">
+            <div class="form-row single">
+                <input type="text" id="cName" placeholder="Name *">
+            </div>
+            <div class="form-row">
+                <input type="email" id="cEmail" placeholder="Email Address *">
+                <input type="tel" id="cPhone" placeholder="Phone *">
+            </div>
+            <div class="form-row single">
+                <input type="text" id="cSubject" placeholder="Subject *">
+            </div>
+            <div class="form-row single">
+                <textarea id="cMessage" rows="5" placeholder="How can we help you? Feel free to get in touch! *"></textarea>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit">Get In Touch</button>
+            </div>
+            <small id="contactMessage"></small>
+        </form>
+    </section>
+
+    <!-- MAP BAND -->
+    <section class="map-band">
+        <iframe
+            title="GlowBeauty store location"
+            src="https://www.google.com/maps?q=Admiralty+Way,+Lekki+Phase+1,+Lagos&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+        </iframe>
+        <div class="map-card">
+            <h4>GlowBeauty Lagos</h4>
+            <p>24 Admiralty Way, Lekki Phase 1,<br>Lagos, Nigeria</p>
+            <a href="https://www.google.com/maps?q=Admiralty+Way,+Lekki+Phase+1,+Lagos" target="_blank" rel="noopener">
+                Get directions <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- HELP CTA + TESTIMONIAL -->
+    <section class="help-testimonial">
+
+        <div class="help-cta">
+            <span class="eyebrow">Need Help?</span>
+            <h2>Do you need help with creative make-up?</h2>
+            <a href="contact.html#contactForm" class="cta-btn">Speak With An Expert</a>
+        </div>
+
+        <div class="testimonial-card">
+            <span class="eyebrow">Testimonials</span>
+            <h3>What Clients Say</h3>
+            <p class="quote">
+                The GlowBeauty team matched my foundation shade perfectly on the
+                first try — something no store had ever managed. Their advice on
+                my skincare routine cleared up my skin in weeks. I won't shop
+                anywhere else now.
+            </p>
+            <div class="client">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200" alt="Client photo">
+                <div>
+                    <strong>Amara Johnson</strong>
+                    <span>Customer</span>
+                </div>
+                <i class="fa-solid fa-quote-right quote-mark"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-logo">GlowBeauty</h2>
+                <p>Premium beauty products designed to enhance
+                    your confidence with luxury makeup,
+                    skincare and accessories.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Face Makeup</a></li>
+                    <li><a href="#">Lip Products</a></li>
+                    <li><a href="#">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fas fa-location-dot"></i> Lagos, Nigeria</p>
+                <p><i class="fas fa-phone"></i> +234 800 000 0000</p>
+                <p><i class="fas fa-envelope"></i> hello@glowbeauty.com</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 GlowBeauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty | Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">GlowBeauty</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bars" id="mobileMenu"></i>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="shop-hero">
+        <div class="shop-hero-overlay">
+            <h1>Shop</h1>
+        </div>
+        <div class="search-bar-wrapper">
+            <p class="search-label">Find Your Perfect Beauty Products</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP LAYOUT -->
+    <section class="shop-container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>Filters</h2>
+
+            <!-- FILTER 1: Categories -->
+            <div class="filter-box">
+                <button class="filter-title">
+                    Categories <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="filter-content">
+                    <!-- FIXED: was value="face" (copy-paste leftover) -->
+                    <label><input type="checkbox" value="all"> All Products</label>
+                    <label><input type="checkbox" value="face"> Face</label>
+                    <label><input type="checkbox" value="lips"> Lips</label>
+                    <label><input type="checkbox" value="eyes"> Eyes</label>
+                    <label><input type="checkbox" value="skincare"> Skincare</label>
+                    <label><input type="checkbox" value="tools"> Tools</label>
+                </div>
+            </div>
+
+            <!-- FILTER 2: Brands -->
+            <div class="filter-box">
+                <button class="filter-title">
+                    Brands <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="filter-content">
+                    <label><input type="checkbox"> GlowBeauty</label>
+                    <label><input type="checkbox"> Rare Beauty</label>
+                    <label><input type="checkbox"> Fenty Beauty</label>
+                    <label><input type="checkbox"> Charlotte Tilbury</label>
+                </div>
+            </div>
+
+            <!-- FILTER 3: Price -->
+            <div class="filter-box">
+                <button class="filter-title">
+                    Price <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="filter-content">
+                    <div class="price-range">
+                        <input type="range" id="priceRange" min="0" max="100" value="100">
+                        <div class="price-labels">
+                            <span>$0</span>
+                            <span id="priceValue">$100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER 4: Rating -->
+            <div class="filter-box">
+                <button class="filter-title">
+                    Rating <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="filter-content">
+                    <label><input type="radio" name="rating"> ★★★★★ &nbsp;5.0</label>
+                    <label><input type="radio" name="rating"> ★★★★☆ &nbsp;4.0+</label>
+                    <label><input type="radio" name="rating"> ★★★☆☆ &nbsp;3.0+</label>
+                </div>
+            </div>
+
+            <button class="clear-filters">Clear All Filters</button>
+
+        </aside>
+
+        <!-- PRODUCTS SECTION -->
+        <div class="products-section">
+
+            <!-- Top Bar -->
+            <div class="products-top">
+                <p>Showing <strong>1–12</strong> of <strong>36</strong> products</p>
+                <select id="sortSelect">
+                    <option>Default Sorting</option>
+                    <option>Newest</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Best Rating</option>
+                </select>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products" id="productGrid">
+
+                <!-- PRODUCT 1 -->
+                <div class="product-card">
+                    <span class="category-tag">Face</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/face/Face6.jpeg" alt="Foundation">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Face Makeup</span>
+                        <h3>Radiant Foundation</h3>
+                        <div class="stars">★★★★★ <span>(128)</span></div>
+                        <div class="price">
+                            <span class="new-price">$32</span>
+                            <span class="old-price">$40</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="product-card">
+                    <span class="category-tag">Eyes</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/eye/EYE2.jpeg" alt="Eye Liner">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Eye Makeup</span>
+                        <h3>Liquid Eye Liner</h3>
+                        <div class="stars">★★★★★ <span>(98)</span></div>
+                        <div class="price">
+                            <span class="new-price">$18</span>
+                            <span class="old-price">$24</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="product-card">
+                    <span class="category-tag">Lips</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/lips/lips8.jpeg" alt="Matte Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Lip Makeup</span>
+                        <h3>Matte Lipstick</h3>
+                        <div class="stars">★★★★☆ <span>(214)</span></div>
+                        <div class="price">
+                            <span class="new-price">$22</span>
+                            <span class="old-price">$28</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="product-card">
+                    <span class="category-tag">Lips</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/lips/lips16.jpg" alt="Lip Liner">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Lip Makeup</span>
+                        <h3>Precision Lip Liner</h3>
+                        <div class="stars">★★★★★ <span>(76)</span></div>
+                        <div class="price">
+                            <span class="new-price">$14</span>
+                            <span class="old-price">$19</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="product-card">
+                    <span class="category-tag">Face</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/face/Face9.jpg" alt="Blush">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Face Makeup</span>
+                        <h3>Powder Blush</h3>
+                        <div class="stars">★★★★★ <span>(183)</span></div>
+                        <div class="price">
+                            <span class="new-price">$26</span>
+                            <span class="old-price">$32</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="product-card">
+                    <span class="category-tag">Skincare</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/tools/tools5.jpeg" alt="Roller">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Skincare</span>
+                        <h3>Face Roller</h3>
+                        <div class="stars">★★★★☆ <span>(302)</span></div>
+                        <div class="price">
+                            <span class="new-price">$38</span>
+                            <span class="old-price">$50</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 7 -->
+                <div class="product-card">
+                    <span class="category-tag">Eyes</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/eye/EYE11.jpg" alt="Mascara">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Eye Makeup</span>
+                        <h3>Volume Mascara</h3>
+                        <div class="stars">★★★★★ <span>(417)</span></div>
+                        <div class="price">
+                            <span class="new-price">$20</span>
+                            <span class="old-price">$26</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 8 -->
+                <div class="product-card">
+                    <span class="category-tag">Face</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/face/Face19.jpg" alt="Concealer">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Face Makeup</span>
+                        <h3>HD Concealer</h3>
+                        <div class="stars">★★★★★ <span>(259)</span></div>
+                        <div class="price">
+                            <span class="new-price">$28</span>
+                            <span class="old-price">$35</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 9 -->
+                <div class="product-card">
+                    <span class="category-tag">Face</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/face/Face3.jpeg" alt="Primer">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Face Makeup</span>
+                        <h3>Glow Primer</h3>
+                        <div class="stars">★★★★☆ <span>(144)</span></div>
+                        <div class="price">
+                            <span class="new-price">$29</span>
+                            <span class="old-price">$36</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 10 -->
+                <div class="product-card">
+                    <span class="category-tag">Eyes</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/eye/EYE12.jpg" alt="Palette">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Eye Makeup</span>
+                        <h3>Eyeshadow Palette</h3>
+                        <div class="stars">★★★★★ <span>(531)</span></div>
+                        <div class="price">
+                            <span class="new-price">$45</span>
+                            <span class="old-price">$58</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 11 -->
+                <div class="product-card">
+                    <span class="category-tag">Lips</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/lips/lips17.jpg" alt="Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Lip Makeup</span>
+                        <h3>Velvet Lipstick</h3>
+                        <div class="stars">★★★★★ <span>(189)</span></div>
+                        <div class="price">
+                            <span class="new-price">$24</span>
+                            <span class="old-price">$30</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 12 -->
+                <div class="product-card">
+                    <span class="category-tag">Face</span>
+                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="product-image">
+                        <img src="images/face/Face2.jpeg" alt="Setting Powder">
+                    </div>
+                    <div class="product-info">
+                        <span class="category">Face Makeup</span>
+                        <h3>Setting Powder</h3>
+                        <div class="stars">★★★★☆ <span>(376)</span></div>
+                        <div class="price">
+                            <span class="new-price">$32</span>
+                            <span class="old-price">$40</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="cart-btn">Add To Cart</button>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <button class="page-btn prev-btn" disabled>
+                    <i class="fa-solid fa-chevron-left"></i> Previous
+                </button>
+                <button class="page-num active">1</button>
+                <button class="page-num">2</button>
+                <button class="page-num">3</button>
+                <span>...</span>
+                <button class="page-num">8</button>
+                <button class="page-num">9</button>
+                <button class="page-num">10</button>
+                <button class="page-btn next-btn">
+                    Next <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS CAROUSEL -->
+    <section class="recommendations">
+        <div class="rec-header">
+            <h2>Explore Our Recommendations</h2>
+            <div class="rec-controls">
+                <button id="recPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="recNext"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="rec-carousel">
+            <div class="rec-track">
+                <div class="rec-card">
+                    <img src="images/lips/Lips0.jpg" alt="Lip Gloss">
+                    <div class="rec-info">
+                        <span>Lips</span>
+                        <h4>Glam Lip Gloss</h4>
+                        <p>★★★★★ <small>(90)</small></p>
+                        <strong>$19.00</strong>
+                    </div>
+                </div>
+                <div class="rec-card">
+                    <img src="images/face/Face7.jpg" alt="Foundation">
+                    <div class="rec-info">
+                        <span>Face</span>
+                        <h4>Matte Foundation</h4>
+                        <p>★★★★☆ <small>(211)</small></p>
+                        <strong>$39.00</strong>
+                    </div>
+                </div>
+                <div class="rec-card">
+                    <img src="images/face/Face5.jpeg" alt="Bronzer">
+                    <div class="rec-info">
+                        <span>Face</span>
+                        <h4>Powder Bronzer</h4>
+                        <p>★★★★★ <small>(143)</small></p>
+                        <strong>$29.00</strong>
+                    </div>
+                </div>
+                <div class="rec-card">
+                    <img src="images/eye/EYE13.jpg" alt="Eyeshadow">
+                    <div class="rec-info">
+                        <span>Eyes</span>
+                        <h4>Shimmer Palette</h4>
+                        <p>★★★★★ <small>(308)</small></p>
+                        <strong>$45.00</strong>
+                    </div>
+                </div>
+                <div class="rec-card">
+                    <img src="images/face/Face4.jpg" alt="Blush">
+                    <div class="rec-info">
+                        <span>Face</span>
+                        <h4>Liquid Blush</h4>
+                        <p>★★★★☆ <small>(172)</small></p>
+                        <strong>$27.00</strong>
+                    </div>
+                </div>
+                <div class="rec-card">
+                    <img src="images/face/Face8.jpg" alt="Setting Spray">
+                    <div class="rec-info">
+                        <span>Skincare</span>
+                        <h4>Setting Spray</h4>
+                        <p>★★★★★ <small>(264)</small></p>
+                        <strong>$26.00</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-left">
+            <h2>Ready to Get<br>Your Glow?</h2>
+            <div class="cta-form">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="cta-right">
+            <h4>GlowBeauty for Every Skin Tone</h4>
+            <p>We'll listen to your needs, find the perfect match,
+            and deliver luxury beauty products right to your door.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company -->
+            <div class="footer-column">
+                <h2 class="footer-logo">GlowBeauty</h2>
+                <p>Premium beauty products designed to enhance
+                    your confidence with luxury makeup,
+                    skincare and accessories.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Shop -->
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Face Makeup</a></li>
+                    <li><a href="#">Lip Products</a></li>
+                    <li><a href="#">Skincare</a></li>
+                </ul>
+            </div>
+            <!-- Customer Service -->
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>
+                    <i class="fas fa-location-dot"></i>
+                    Lagos, Nigeria
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +234 800 000 0000
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    hello@glowbeauty.com
+                </p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2026 GlowBeauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast notification -->
+    <div id="toast"></div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
