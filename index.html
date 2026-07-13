@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">GlowBeauty</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bars" id="mobileMenu"></i>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/face model.png" alt="Beauty model">
+                <div class="overlay">
+                    <h1>Enhance Your Natural Beauty</h1>
+                    <p>Premium makeup for every skin tone.</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/heroimg.png" alt="Luxury makeup">
+                <div class="overlay">
+                    <h1>Luxury Makeup Collection</h1>
+                    <p>Discover our newest arrivals.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/hero.png" alt="Glow products">
+                <div class="overlay">
+                    <h1>Glow Like Never Before</h1>
+                    <p>Long lasting beauty products.</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/hero1.png" alt="Beauty essentials">
+                <div class="overlay">
+                    <h1>Beauty Starts Here</h1>
+                    <p>Find your perfect shade.</p>
+                    <button>Shop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="categories">
+        <div class="section-title">
+            <h2>Shop By Category</h2>
+            <p>Find your favorite beauty essentials</p>
+        </div>
+
+        <div class="category-container">
+            <a href="#" class="category-card">
+                <div class="category-image">
+                    <img src="images/face/face model 1.jfif" alt="Face Makeup">
+                </div>
+                <h3>Face</h3>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-image">
+                    <img src="images/lips/lipmodel 1.jfif" alt="Lip Makeup">
+                </div>
+                <h3>Lips</h3>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-image">
+                    <img src="images/eye/eyemodel.jfif" alt="Eye Makeup">
+                </div>
+                <h3>Eyes</h3>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-image">
+                    <img src="images/skincare/skincare model.png" alt="Skincare">
+                </div>
+                <h3>Skincare</h3>
+            </a>
+
+            <a href="#" class="category-card">
+                <div class="category-image">
+                    <img src="images/tools/tools4.jpeg" alt="Accessories">
+                </div>
+                <h3>Accessories</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-products">
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Handpicked beauty essentials you'll love.</p>
+        </div>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Foundation.png" alt="Foundation">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Radiant Foundation</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$32</span>
+                        <span class="old-price">$40</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Lipstick.png" alt="Lipstick">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Velvet Lipstick</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$24</span>
+                        <span class="old-price">$30</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Primer.png" alt="Primer">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Glow Primer</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$29</span>
+                        <span class="old-price">$36</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Blush.png" alt="Blush">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Powder Blush</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$26</span>
+                        <span class="old-price">$32</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Mascara.png" alt="Mascara">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Volume Mascara</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$20</span>
+                        <span class="old-price">$26</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Serum.png" alt="Serum">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Vitamin C Serum</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$38</span>
+                        <span class="old-price">$50</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Palette.png" alt="Palette">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>Eyeshadow Palette</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$45</span>
+                        <span class="old-price">$58</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="images/featured products/Concealers.png" alt="Concealer">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">GlowBeauty</span>
+                    <h3>HD Concealer</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                        <span class="new-price">$28</span>
+                        <span class="old-price">$35</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROMOTIONAL BANNER -->
+    <section class="promo-banner">
+        <div class="promo-overlay">
+            <span class="promo-tag">NEW COLLECTION</span>
+            <h2>Beauty That Speaks Confidence</h2>
+            <p>
+                Discover our premium makeup collection crafted for every skin tone.
+                Enjoy up to <strong>40% OFF</strong> selected products.
+            </p>
+            <a href="shop.html" class="promo-btn">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="best-sellers">
+        <div class="section-header">
+            <div>
+                <h2>Best Sellers</h2>
+                <p>Our customers' favourite beauty essentials</p>
+            </div>
+            <div class="carousel-controls">
+                <button id="bestPrev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="bestNext">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="best-card">
+                    <img src="images/lips/lips3.jpeg" alt="Velvet Lipstick">
+                    <h4>Velvet Lipstick</h4>
+                    <span>$24.00</span>
+                </div>
+                <div class="best-card">
+                    <img src="images/obadee/foundation.png" alt="Matte Foundation">
+                    <h4>Matte Foundation</h4>
+                    <span>$39.00</span>
+                </div>
+                <div class="best-card">
+                    <img src="images/obadee/primer.png" alt="Glow Primer">
+                    <h4>Glow Primer</h4>
+                    <span>$29.00</span>
+                </div>
+                <div class="best-card">
+                    <img src="images/obadee/eyeshadow.png" alt="Eyeshadow Palette">
+                    <h4>Eyeshadow Palette</h4>
+                    <span>$45.00</span>
+                </div>
+                <div class="best-card">
+                    <img src="images/obadee/liquid blush.png" alt="Liquid Blush">
+                    <h4>Liquid Blush</h4>
+                    <span>$27.00</span>
+                </div>
+                <div class="best-card">
+                    <img src="images/obadee/setting spray.png" alt="Setting Spray">
+                    <h4>Setting Spray</h4>
+                    <span>$26.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-image">
+                <img src="images/model.jpeg" alt="Beauty Model">
+            </div>
+
+            <div class="newsletter-content">
+                <span class="newsletter-tag">JOIN THE GLOW CLUB</span>
+                <h2>Get 10% OFF Your First Order</h2>
+                <p>
+                    Subscribe to receive exclusive offers,
+                    beauty tips, new arrivals,
+                    and members-only discounts.
+                </p>
+
+                <form id="newsletterForm">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <small id="newsletterMessage"></small>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-logo">GlowBeauty</h2>
+                <p>Premium beauty products designed to enhance
+                    your confidence with luxury makeup,
+                    skincare and accessories.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Face Makeup</a></li>
+                    <li><a href="#">Lip Products</a></li>
+                    <li><a href="#">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>
+                    <i class="fas fa-location-dot"></i>
+                    Lagos, Nigeria
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +234 800 000 0000
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    hello@glowbeauty.com
+                </p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 GlowBeauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="main.js"></script>
+</body>
+</html>
